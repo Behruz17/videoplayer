@@ -11,7 +11,7 @@ import {
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 export default function Login({navigation}) {
-  const [form, setForm] = useState({login: '', password: ''});
+  const [form, setForm] = useState({username: '', password: ''});
 
   const handleSignIn = () => {
     const correctLogin = 'admin';
@@ -50,7 +50,7 @@ export default function Login({navigation}) {
               placeholder="test@email.com"
               placeholderTextColor="#6b7280"
               value={form.login}
-              onChangeText={login => setForm({...form, login})}
+              onChangeText={txt => setForm({...form, username: txt})}
             />
           </View>
           <View style={styles.input}>

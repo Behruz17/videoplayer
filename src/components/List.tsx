@@ -13,7 +13,7 @@ export default function List() {
   const navigation = useNavigation();
 
   const handleCardClick = video => {
-    navigation.navigate('Details', {video});
+    navigation.navigate('Details');
   };
 
   return (
